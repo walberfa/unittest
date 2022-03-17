@@ -1,0 +1,7 @@
+
+>
+calculadora.py,6\f\6f7c66fc53f7c6554ae744ef5d57a7618d12d762
+8
+login.py,9\e\9e1b290c149a36383a70aa88796e22e81d0ce63b
+7
+main.py,f\1\f1bdda93d9a278e358509d498e17d97764c1fb29
