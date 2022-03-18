@@ -1,37 +1,5 @@
 import unittest
 import calculadora
-import login
-import re
-
-
-def set_up():
-    print('set up test')
-
-
-def tear_down():
-    print('tear down test')
-
-
-class TestStringMethods(unittest.TestCase):
-
-    def test_upper(self):
-        # primeiro teste de assertEqual
-        self.assertEqual('teste'.upper(), 'TESTE')
-
-    def test_lower(self):
-        # primeiro teste de assertNotEqual
-        self.assertNotEqual('teste'.lower(), 'TESTE')
-
-    def test_isupper(self):
-        # teste de assertTrue e assertFalse
-        self.assertTrue('TESTE'.isupper())
-        self.assertFalse('Teste'.isupper())
-
-    def test_is(self):
-        a = "a"
-        b = "abc"
-        self.assertIs(a, a)
-        self.assertIsNot(a, b)
 
 
 class TestCalculadora(unittest.TestCase):
@@ -72,19 +40,6 @@ class TestCalculadora(unittest.TestCase):
         # Exceção para divisão com zero
         with self.assertRaises(ValueError):
             calculadora.divisao(2, 0)
-
-
-class TestLogin(unittest.TestCase):
-
-    def test_admin_login(self):
-        # Testando a tupla do admin
-        self.assertTupleEqual(login.usuarios[0], ('admin', 'admin123'))
-
-    '''def test_nome_usario_sem_carac_especial(self):
-        users = []
-        for value in login.usuarios:
-            users.append(value[0])
-        # self.assertRegex()'''
 
 
 if __name__ == '__main__':
