@@ -1,4 +1,6 @@
 from datetime import datetime
+import requests
+import json
 
 
 class Calendario:
@@ -8,7 +10,3 @@ class Calendario:
 
     def is_weekend(self):
         return self.hoje.weekday() >= 5
-
-
-calendario = Calendario(datetime)
-# assert calendario.is_weekend()

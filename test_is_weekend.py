@@ -2,6 +2,7 @@ from datetime import datetime
 from is_weekend import Calendario
 import unittest
 from unittest.mock import Mock
+import requests
 
 
 sabado = datetime(year=2022, month=3, day=26)
