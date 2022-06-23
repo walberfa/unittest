@@ -10,7 +10,7 @@ def subtracao(x, y):
 
 
 def multiplicacao(x, y):
-    # Calculo de divisão
+    # Calculo de multiplicação
     return x * y
 
 
